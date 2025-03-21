@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Clube Atlético Primavera</title>
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid nav-bar sticky-top px-4 py-2 py-lg-0">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a href="index.html" class="navbar-brand p-0">
+                <h1 class="display-6 text-dark"><img src="img/logo.png" alt=""></i>Clube Atlético Primavera</h1>
+                <!-- <img src="img/logo.png" alt="Logo"> -->
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav mx-auto py-0">
+                    <a href="index.html" onclick="clicou(event)" class="nav-item nav-link home active">Home</a>
+                    <a href="about.html" onclick="clicou(event)" class="nav-item nav-link about">Sobre Nós</a>
+                    <a href="service.html" onclick="clicou(event)" class="nav-item nav-link services">Serviços</a>
+                    <a href="blog.html" onclick="clicou(event)" class="nav-item nav-link news">Notícias</a>
+
+                    <a href="contact.html" onclick="clicou(event)" class="nav-item nav-link contact">Contato</a>
+                    <!-- <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Veja +</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="feature.html" class="dropdown-item">Novidades</a>
+                                <a href="gallery.html" class="dropdown-item">Galeria de Fotos</a>
+                                <a href="attraction.html" class="dropdown-item">Atrações</a>
+                                <a href="package.html" class="dropdown-item">Associação</a>
+                                <a href="team.html" class="dropdown-item">Nosso time</a>
+                                <a href="testimonial.html" class="dropdown-item">O que dizem</a>
+                            </div>
+                        </div> -->
+                </div>
+                <div class="team-icon d-none d-xl-flex justify-content-center me-3">
+                    <a class="btn btn-square btn-light rounded-circle mx-1" target="_blank"  href="https://www.facebook.com/clubeprimavera/?locale=pt_BR"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i
+                            class="fab fa-linkedin-in"></i></a>
+                </div>
+                <!-- <a href="#" class="btn btn-primary rounded-pill py-2 px-4 flex-shrink-0">Registrar</a> -->
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar & Hero End -->
+
+    <!-- Carousel Start -->
+    <div class="header-carousel owl-carousel">
+        <div class="header-carousel-item">
+            <img src="img/quadra.jpg" class="img-fluid w-100" alt="Image">
+            <div class="carousel-caption">
+                <div class="container py-4">
+                    <div class="row g-5 align-items-center">
+                        <div class="col-xl-7 fadeInLeft animated" data-animation="fadeInLeft" data-delay="1s"
+                            style="animation-delay: 1s;">
+                            <div class="text-start">
+                                <h4 class="text-primary text-uppercase fw-bold mb-4">Atrações para o verão</h4>
+                                <h1 class="display-4 text-uppercase text-white mb-4">Quadra esportiva</h1>
+                                <p class="mb-4 fs-5">Venha praticar no nosso espaço de jogos
+                                </p>
+                                <div class="d-flex flex-shrink-0">
+                                    <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="#">Ver
+                                        pacotes</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="carousel-caption">
+                    <div class="container align-items-center py-4">
+                        <div class="row g-5 align-items-center">
+                            <div class="col-xl-7 fadeInLeft animated" data-animation="fadeInLeft" data-delay="1s" style="animation-delay: 1s;">
+                                <div class="text-start">
+                                    <h4 class="text-primary text-uppercase fw-bold mb-4">Bem vindo ao Nosso clube</h4>
+                                    <h1 class="display-4 text-uppercase text-white mb-4">Plano para seu bolso nas melhores instalações</h1>
+                                    <p class="mb-4 fs-5">Se registre gratuitamente, receça as notícias e fique por dentro das nossas atrações 
+                                    </p>
+                                    <div class="d-flex flex-shrink-0">
+                                        <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="#">Registrar Grátis</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-5 fadeInRight animated" data-animation="fadeInRight" data-delay="1s" style="animation-delay: 1s;">
+                                <div class="ticket-form p-5">
+                                    <h2 class="text-dark text-uppercase mb-4">Ainda não tem cadastro?</h2>
+                                    <form>
+                                        <div class="row g-4">
+                                            <div class="col-12">
+                                                <input type="text" class="form-control border-0 py-2" id="name" placeholder="Nome">
+                                            </div>
+                                            <div class="col-12 col-xl-6">
+                                                <input type="email" class="form-control border-0 py-2" id="email" placeholder="E-mail">
+                                            </div>
+                                            <div class="col-12 col-xl-6">
+                                                <input type="phone" class="form-control border-0 py-2" id="phone" placeholder="Celular">
+                                            </div>
+                                            <div class="col-12">
+                                                <select class="form-select border-0 py-2" aria-label="Default select example">
+                                                    <option selected>Pacotes</option>
+                                                    <option value="1">Free Package</option>
+                                                    <option value="2">Family Package</option>
+                                                    <option value="3">Basic Package</option>
+                                                    <option value="4">Premium Package</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-12">
+                                                <button type="button" class="btn btn-primary w-100 py-2 px-5">Cadastrar Agora</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div> -->
+        </div>
+        <div class="header-carousel-item">
+            <img src="img/parque.jpg" class="img-fluid w-100" alt="Image">
+            <div class="carousel-caption">
+                <div class="container py-4">
+                    <div class="row g-5 align-items-center">
+                        <div class="col-xl-7 fadeInLeft animated" data-animation="fadeInLeft" data-delay="1s"
+                            style="animation-delay: 1s;">
+                            <div class="text-start">
+                                <h4 class="text-primary text-uppercase fw-bold mb-4">Diversão para a Criançada</h4>
+                                <h1 class="display-4 text-uppercase text-white mb-4">Parquinho Infantil</h1>
+                                <p class="mb-4 fs-5">Diversão garantida em nosso espaço
+                                </p>
+                                <div class="d-flex flex-shrink-0">
+                                    <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="#">Ver
+                                        pacotes</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+    <!-- Blog Start -->
+    <div class="container-fluid blog py-5 pb-5">
+        <div class="container pb-5">
+            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                <h4 class="text-primary">Notícias</h4>
+                <h1 class="display-5 mb-4">Últimas notícias e Artigos</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="blog-item">
+                        <div class="blog-img">
+                            <a href="#">
+                                <img src="img/parque.jpg" class="img-fluid w-100 rounded-top" alt="Image">
+                            </a>
+                            <div class="blog-category py-2 px-4">Parquinho</div>
+                            <div class="blog-date"><i class="fas fa-clock me-2"></i>12 de Outubro de 2024</div>
+                        </div>
+                        <div class="blog-content p-4">
+                            <a href="#" class="h4 d-inline-block mb-4">Venha conferir o nosso espaço infantil</a>
+                            <p class="mb-4">Diversão para a criançada! Brinquedos como escorregador, balanços e mais, nosso
+                                espaço vai garantir alegria e entretenimento para os pequenos. Traga a família e aproveite um
+                                ambiente cheio de energia!
+                            </p>
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4">Leia mais <i
+                                    class="fas fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="blog-item">
+                        <div class="blog-img">
+                            <a href="#">
+                                <img src="img/piscina.jpg" class="img-fluid w-100 rounded-top" alt="Image">
+                            </a>
+                            <div class="blog-category py-2 px-4">Piscinas</div>
+                            <div class="blog-date"><i class="fas fa-clock me-2"></i>12 de Outubro de 2024</div>
+                        </div>
+                        <div class="blog-content p-4">
+                            <a href="#" class="h4 d-inline-block mb-4">Venha conferir nossas piscinas</a>
+                            <p class="mb-4">Perfeito para se refrescar e se divertir! áreas rasas para os pequenos e espaço
+                                para relaxar. O lugar perfeito para curtir o verão com a família. Traga os amigos, mergulhe na
+                                diversão e aproveite o momento!
+                            </p>
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4">Leia mais <i
+                                    class="fas fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="blog-item">
+                        <div class="blog-img">
+                            <a href="#">
+                                <img src="img/praca.jpg" class="img-fluid w-100 rounded-top" alt="Image">
+                            </a>
+                            <div class="blog-category py-2 px-4">Praça ao ar livre</div>
+                            <div class="blog-date"><i class="fas fa-clock me-2"></i>12 de Outubro de 2024</div>
+                        </div>
+                        <div class="blog-content p-4">
+                            <a href="#" class="h4 d-inline-block mb-4">Venha conferir nossa praça ao ar livre</a>
+                            <p class="mb-4">Um ambiente para se respirar um ar puro, se conectar e aproveitar momentos ao ar livre!
+                                com areas verdes, espaço para piqueniques, brincadeiras e muito mais. Um espaço ideal para reunir a
+                                família, amigos ou até curtir sozinho!
+                            </p>
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4">Leia mais <i
+                                    class="fas fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Blog End -->
+
+    <!-- About Start -->
+    <div class="container-fluid about pb-5">
+        <div class="container pb-5">
+            <div class="row g-5">
+                <div class="col-xl-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div>
+                        <h4 class="text-primary">Sobre o Clube Atlético Primavera</h4>
+                        <h1 class="display-5 mb-4">Melhor clube e associação de 2025</h1>
+                        <p class="mb-5">O Clube Atlético Primavera se destaca como o melhor lugar para lazer e diversão em 2025. Aqui,
+                            combinamos uma infraestrutura de ponta com um ambiente acolhedor e seguro, proporcionando
+                            experiências inesquecíveis para todos os nossos membros. Nossa equipe dedicada está sempre
+                            pronta para garantir que cada visita seja especial.
+
+
+                        </p>
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <div class="me-3"><i class="fas fa-glass-cheers fa-3x text-primary"></i></div>
+                                    <div>
+                                        <h4>Comida e Bebidas</h4>
+                                        <p>Desfrute de uma variedade de opções gastronômicas preparadas com ingredientes
+                                            frescos e de alta qualidade, pensadas para agradar todos os paladares.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <div class="me-3"><i class="fas fa-dot-circle fa-3x text-primary"></i></div>
+                                    <div>
+                                        <h4>Muitas Atrações</h4>
+                                        <p>Oferecemos uma ampla gama de atividades e entretenimento para todas as
+                                            idades, garantindo que todos encontrem algo que amem.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <div class="me-3"><i class="fas fa-hand-holding-usd fa-3x text-primary"></i></div>
+                                    <div>
+                                        <h4>Preços Acessíveis</h4>
+                                        <p>Acreditamos que diversão e qualidade não precisam custar caro. Nossos preços
+                                            são justos e acessíveis, sem comprometer a excelência de nossos serviços.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <div class="me-3"><i class="fas fa-lock fa-3x text-primary"></i></div>
+                                    <div>
+                                        <h4>Armários Seguros</h4>
+                                        <p>Garantimos a segurança dos seus pertences com nossos armários modernos e
+                                            seguros, para que você possa relaxar e aproveitar sem preocupações. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="position-relative rounded">
+                        <div class="rounded" style="margin-top: 40px;">
+                            <div class="row g-0">
+                                <div class="col-lg-12">
+                                    <div class="rounded mb-4">
+                                        <img src="img/casa.jpg" class="img-fluid rounded w-100" alt="">
+                                    </div>
+                                    <div class="row gx-4 gy-0">
+                                        <div class="col-6">
+                                            <div class="counter-item bg-primary rounded text-center p-4 h-100">
+                                                <div class="counter-item-icon mx-auto mb-3">
+                                                    <i class="fas fa-thumbs-up fa-3x text-white"></i>
+                                                </div>
+                                                <div class="counter-counting mb-3">
+                                                    <span class="text-white fs-2 fw-bold"
+                                                        data-toggle="counter-up">150</span>
+                                                    <span class="h1 fw-bold text-white">K +</span>
+                                                </div>
+                                                <h5 class="text-white mb-0">Visitantes Felizes</h5>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="counter-item bg-dark rounded text-center p-4 h-100">
+                                                <div class="counter-item-icon mx-auto mb-3">
+                                                    <i class="fas fa-certificate fa-3x text-white"></i>
+                                                </div>
+                                                <div class="counter-counting mb-3">
+                                                    <span class="text-white fs-2 fw-bold"
+                                                        data-toggle="counter-up">120</span>
+                                                    <span class="h1 fw-bold text-white"> +</span>
+                                                </div>
+                                                <h5 class="text-white mb-0">Ganhador de Premios</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rounded bg-primary p-4 position-absolute d-flex justify-content-center"
+                            style="width: 90%; height: 80px; top: -40px; left: 50%; transform: translateX(-50%);">
+                            <h3 class="mb-0 text-white">20 Anos de Experiência</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Service Start -->
+    <div class="container-fluid service py-5">
+        <div class="container service-section py-5">
+            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                <h4 class="text-primary">Eventos</h4>
+                <h1 class="display-5 text-white mb-4">Explore próximos eventos e nossos serviços</h1>
+                <p class="mb-0 text-white">Descubra uma variedade de eventos emocionantes planejados para os próximos
+                    meses, oferecendo uma oportunidade única de vivenciar tudo o que nosso clube tem a oferecer. De
+                    festas temáticas a competições esportivas, temos algo para todos. Aproveite para explorar nossos
+                    serviços exclusivos, que tornarão sua experiência ainda mais memorável.
+                </p>
+            </div>
+            <div class="row g-4">
+                <!-- <div class="col-0 col-md-1 col-lg-2 col-xl-2"></div>
+                    <div class="col-md-10 col-lg-8 col-xl-8 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="service-days p-4">
+                            <div class="py-2 border-bottom border-top d-flex align-items-center justify-content-between flex-wrap"><h4 class="mb-0 pb-2 pb-sm-0">Monday - Friday</h4> <p class="mb-0"><i class="fas fa-clock text-primary me-2"></i>11:00 AM - 16:00 PM</p></div>
+                            <div class="py-2 border-bottom d-flex align-items-center justify-content-between flex-shrink-1 flex-wrap"><h4 class="mb-0 pb-2 pb-sm-0">Saturday - Sunday</h4> <p class="mb-0"><i class="fas fa-clock text-primary me-2"></i>09:00 AM - 17:00 PM</p></div>
+                            <div class="py-2 border-bottom d-flex align-items-center justify-content-between flex-shrink-1 flex-wrap"><h4 class="mb-0">Holiday</h4> <p class="mb-0"><i class="fas fa-clock text-primary me-2"></i>09:00 AM - 17:00 PM</p></div>
+                        </div>
+                    </div>
+                    <div class="col-0 col-md-1 col-lg-2 col-xl-2"></div> -->
+
+                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="service-item p-4">
+                        <div class="service-content">
+                            <div class="mb-4">
+                                <i class="fas fa-home fa-4x"></i>
+                            </div>
+                            <a href="#" class="h4 d-inline-block mb-3">Gazebo Privativo</a>
+                            <p class="mb-0">Desfrute de um espaço reservado e confortável em nossos gazebos privativos,
+                                perfeitos para relaxar ou comemorar momentos especiais com total privacidade.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="service-item p-4">
+                        <div class="service-content">
+                            <div class="mb-4">
+                                <i class="fas fa-utensils fa-4x"></i>
+                                <a href="#" class="h4 d-inline-block mb-3">Comida Deliciosa</a>
+                            </div>
+                            <p class="mb-0">Saboreie pratos incríveis preparados por nossos chefs, que combinam
+                                ingredientes frescos e receitas inovadoras para proporcionar uma experiência
+                                gastronômica inesquecível.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="service-item p-4">
+                        <div class="service-content">
+                            <div class="mb-4">
+                                <i class="fas fa-door-closed fa-4x"></i>
+                            </div>
+                            <a href="#" class="h4 d-inline-block mb-3">Armários Seguros</a>
+                            <p class="mb-0">Mantenha seus pertences protegidos enquanto aproveita os eventos, com nossos
+                                armários seguros e de fácil acesso.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                    <div class="service-item p-4">
+                        <div class="service-content">
+                            <div class="mb-4">
+                                <i class="fas fa-swimming-pool fa-4x"></i>
+                            </div>
+                            <a href="#" class="h4 d-inline-block mb-3">Passeios de Barco</a>
+                            <p class="mb-0">Experimente a beleza natural de nosso rio em um passeio de barco tranquilo e
+                                revigorante, ideal para apreciar a paisagem e relaxar.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Ticket Packages Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-12 col-xl-4 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="packages-item h-100">
+                        <h4 class="text-primary">Nossos Pacotes</h4>
+                        <h1 class="display-5 mb-4">Escolha o melhor para sua família</h1>
+                        <p class="mb-4">Oferecemos uma variedade de pacotes pensados para atender às necessidades de sua
+                            família. Seja para um dia relaxante na piscina ou para aproveitar todas as atrações do nosso
+                            clube, temos opções que cabem no seu bolso e garantem momentos inesquecíveis.
+                        </p>
+                        <p><i class="fa fa-check text-primary me-2"></i>Melhor piscina da região</p>
+                        <p><i class="fa fa-check text-primary me-2"></i>Pacotes ajustáveis para seu bolso</p>
+                        <p><i class="fa fa-check text-primary me-2"></i>Diversos brinquedos e áreas Kids</p>
+                        <p class="mb-5"><i class="fa fa-check text-primary me-2"></i>Ganhe 2 semanas grátis</p>
+                        <a href="#" class="btn btn-primary rounded-pill py-3 px-5"> Registrar</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="pricing-item bg-dark rounded text-center p-5 h-100">
+                        <div class="pb-4 border-bottom">
+                            <h2 class="mb-4 text-primary">Pacote Familiar</h2>
+                            <p class="mb-4">Aproveite o melhor que nosso clube tem a oferecer com o Pacote Familiar.
+                                Desfrute de um dia inesquecível com acesso total ao parque aquático, e muito mais!</p>
+                            <h2 class="mb-0 text-primary">R$260,90<span class="text-body fs-5 fw-normal">/Familia</span>
+                            </h2>
+                        </div>
+                        <div class="py-4">
+                            <p class="mb-4"><i class="fa fa-check text-primary me-2"></i>Acesso completo ao parque
+                                aquático</p>
+                            <p class="mb-4"><i class="fa fa-check text-primary me-2"></i>Dois gazebos inclusos</p>
+                            <p class="mb-4"><i class="fa fa-check text-primary me-2"></i>Bebidas não alcoólicas
+                                gratuitas</p>
+                            <p class="mb-4"><i class="fa fa-check text-primary me-2"></i>Quatro armários disponíveis</p>
+                            <p class="mb-4"><i class="fa fa-check text-primary me-2"></i>Quatro toalhas gratuitas </p>
+                        </div>
+                        <a href="#" class="btn btn-light rounded-pill py-3 px-5"> Registrar</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="pricing-item bg-primary rounded text-center p-5 h-100">
+                        <div class="pb-4 border-bottom">
+                            <h2 class="text-white mb-4">Pacote Básico</h2>
+                            <p class="text-white mb-4">Perfeito para quem quer aproveitar ao máximo com um orçamento
+                                acessível. O Pacote Básico oferece uma excelente experiência a um preço competitivo.</p>
+                            <h2 class="text-white mb-0">$60,90<span class="text-white fs-5 fw-normal">/Pessoa</span></h2>
+                        </div>
+                        <div class="text-white py-4">
+                            <p class="mb-4"><i class="fa fa-check text-dark me-2"></i>Um gazebo pequeno incluso</p>
+                            <p class="mb-4"><i class="fa fa-check text-dark me-2"></i>Bebida não alcoólica gratuita</p>
+                            <p class="mb-4"><i class="fa fa-check text-dark me-2"></i>Um armário disponível</p>
+                            <p class="mb-4"><i class="fa fa-check text-dark me-2"></i>Uma toalha gratuita</p>
+                        </div>
+                        <a href="#" class="btn btn-dark rounded-pill py-3 px-5"> Registrar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Ticket Packages End -->
+
+
+    <!-- Attractions Start -->
+    <div class="container-fluid attractions py-5">
+        <div class="container attractions-section py-5">
+            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                <h4 class="text-primary">Atrações</h4>
+                <h1 class="display-5 text-white mb-4">Explore nossas atrações</h1>
+                <p class="text-white mb-0">Descubra as diversas atrações que fazem do nosso clube um destino único.
+                    Desde atividades emocionantes até espaços tranquilos para relaxar, oferecemos algo especial para
+                    cada visitante. Venha explorar e criar memórias inesquecíveis conosco.
+                </p>
+            </div>
+            <div class="owl-carousel attractions-carousel wow fadeInUp" data-wow-delay="0.1s">
+                <div class="attractions-item wow fadeInUp" data-wow-delay="0.2s">
+                    <img src="img/lago.jpg" class="img-fluid rounded w-100" alt="">
+                    <a href="#" class="attractions-name">Lagos</a>
+                </div>
+                <div class="attractions-item wow fadeInUp" data-wow-delay="0.4s">
+                    <img src="img/estabulo.jpg" class="img-fluid rounded w-100" alt="">
+                    <a href="#" class="attractions-name">Estábulos</a>
+                </div>
+                <div class="attractions-item wow fadeInUp" data-wow-delay="0.6s">
+                    <img src="img/trilha.jpg" class="img-fluid rounded w-100" alt="">
+                    <a href="#" class="attractions-name">Trilhas</a>
+                </div>
+                <div class="attractions-item wow fadeInUp" data-wow-delay="0.8s">
+                    <img src="img/quadra.jpg" class="img-fluid rounded w-100" alt="">
+                    <a href="#" class="attractions-name">Quadras</a>
+                </div>
+                <div class="attractions-item wow fadeInUp" data-wow-delay="1s">
+                    <img src="img/parque.jpg" class="img-fluid rounded w-100" alt="">
+                    <a href="#" class="attractions-name">Parquinho</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Attractions End -->
+
+    <!-- Gallery Start -->
+        <div class="container-fluid gallery pb-5">
+            <div class="container pb-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">Galeria</h4>
+                    <h1 class="display-5 mb-4">Momentos capturados</h1>
+                    <p class="mb-0">Celebre os momentos especiais que você viveu em nosso clube. Compartilhe suas
+                        experiências e reveja os melhores momentos que capturamos durante sua visita.
+                    </p>
+                </div>
+            <div class="row g-4">
+                <div class="col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="gallery-item">
+                        <img src="img/churrasqueira.jpg" class="img-fluid rounded w-100 h-100" alt="">
+                        <div class="search-icon">
+                            <a href="img/churrasqueira.jpg" class="btn btn-light btn-lg-square rounded-circle"
+                            data-lightbox="Gallery-1"><i class="fas fa-search-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="gallery-item">
+                        <img src="img/piscina.jpg" class="img-fluid rounded w-100 h-100" alt="">
+                        <div class="search-icon">
+                            <a href="img/piscina.jpg" class="btn btn-light btn-lg-square rounded-circle"
+                                data-lightbox="Gallery-2"><i class="fas fa-search-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="gallery-item">
+                        <img src="img/piscina_2.jpg" class="img-fluid rounded w-100 h-100" alt="">
+                        <div class="search-icon">
+                            <a href="img/piscina_2.jpg" class="btn btn-light btn-lg-square rounded-circle"
+                                data-lightbox="Gallery-3"><i class="fas fa-search-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="gallery-item">
+                        <img src="img/casa.jpg" class="img-fluid rounded w-100 h-100" alt="">
+                        <div class="search-icon">
+                            <a href="img/casa.jpg" class="btn btn-light btn-lg-square rounded-circle"
+                                data-lightbox="Gallery-4"><i class="fas fa-search-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="gallery-item">
+                        <img src="img/frente_casa_2.jpg" class="img-fluid rounded w-100 h-100" alt="">
+                        <div class="search-icon">
+                            <a href="img/frente_casa_2.jpg" class="btn btn-light btn-lg-square rounded-circle"
+                                data-lightbox="Gallery-5"><i class="fas fa-search-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="gallery-item">
+                        <img src="img/trilha.jpg" class="img-fluid rounded w-100 h-100" alt="">
+                        <div class="search-icon">
+                            <a href="img/trilha.jpg" class="btn btn-light btn-lg-square rounded-circle"
+                                data-lightbox="Gallery-6"><i class="fas fa-search-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Gallery End -->
+
+
+
+
+
+    <!-- Team Start -->
+<!--     <div class="container-fluid team pb-5">
+        <div class="container pb-5">
+            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                <h4 class="text-primary">Nossa equipe</h4>
+                <h1 class="display-5 mb-4">Nosso time dedicado pra fazer o melhor por você</h1>
+                <p class="mb-0">Estamos aqui para garantir que cada momento no nosso clube seja perfeito para você.
+                    Nossa equipe dedicada está comprometida em oferecer o melhor serviço, garantindo que sua experiência
+                    seja inesquecível.
+                </p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="team-item p-4">
+                        <div class="team-content">
+                            <div class="d-flex justify-content-between border-bottom pb-4">
+                                <div class="text-start">
+                                    <h4 class="mb-0">David James</h4>
+                                    <p class="mb-0">Profession</p>
+                                </div>
+                                <div>
+                                    <img src="img/team-1.jpg" class="img-fluid rounded"
+                                        style="width: 100px; height: 100px;" alt="">
+                                </div>
+                            </div>
+                            <div class="team-icon rounded-pill my-4 p-3">
+                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" target="_blank"  href="https://www.facebook.com/clubeprimavera/?locale=pt_BR"><i
+                                        class="fab fa-facebook-f"></i></a>
+
+                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href=""><i
+                                        class="fab fa-linkedin-in"></i></a>
+                                <a class="btn btn-primary btn-sm-square rounded-circle me-0" href=""><i
+                                        class="fab fa-instagram"></i></a>
+                            </div>
+                            <p class="text-center mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem,
+                                quibusdam eveniet itaque provident sequi deserunt.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="team-item p-4">
+                        <div class="team-content">
+                            <div class="d-flex justify-content-between border-bottom pb-4">
+                                <div class="text-start">
+                                    <h4 class="mb-0">William John</h4>
+                                    <p class="mb-0">Profession</p>
+                                </div>
+                                <div>
+                                    <img src="img/team-2.jpg" class="img-fluid rounded"
+                                        style="width: 100px; height: 100px;" alt="">
+                                </div>
+                            </div>
+                            <div class="team-icon rounded-pill my-4 p-3">
+                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href=""><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href=""><i
+                                        class="fab fa-twitter"></i></a>
+                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href=""><i
+                                        class="fab fa-linkedin-in"></i></a>
+                                <a class="btn btn-primary btn-sm-square rounded-circle me-0" href=""><i
+                                        class="fab fa-instagram"></i></a>
+                            </div>
+                            <p class="text-center mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem,
+                                quibusdam eveniet itaque provident sequi deserunt.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="team-item p-4">
+                        <div class="team-content">
+                            <div class="d-flex justify-content-between border-bottom pb-4">
+                                <div class="text-start">
+                                    <h4 class="mb-0">Michael John</h4>
+                                    <p class="mb-0">Profession</p>
+                                </div>
+                                <div>
+                                    <img src="img/team-3.jpg" class="img-fluid rounded"
+                                        style="width: 100px; height: 100px;" alt="">
+                                </div>
+                            </div>
+                            <div class="team-icon rounded-pill my-4 p-3">
+                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href=""><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href=""><i
+                                        class="fab fa-twitter"></i></a>
+                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href=""><i
+                                        class="fab fa-linkedin-in"></i></a>
+                                <a class="btn btn-primary btn-sm-square rounded-circle me-0" href=""><i
+                                        class="fab fa-instagram"></i></a>
+                            </div>
+                            <p class="text-center mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem,
+                                quibusdam eveniet itaque provident sequi deserunt.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Team End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-6 col-xl-4">
+                    <div class="footer-item">
+                        <a href="index.html" class="p-0">
+                            <h4 class="text-white mb-4"> <img src="img/logo.png" style="width: 50px;"> Clube Atlético Primavera</h4>
+                            <!-- <img src="img/logo.png" alt="Logo"> -->
+                        </a>
+                        <p class="mb-2">O Nosso Clube oferece uma experiência única para toda a família. Situado no
+                            coração da cidade, somos conhecidos por nosso ambiente acolhedor e nossas instalações de
+                            primeira classe.</p>
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-map-marker-alt text-primary me-3"></i>
+                            <p class="text-white mb-0">Almirante Tamandaré, PR, Brasil, 83511422</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-envelope text-primary me-3"></i>
+                            <p class="text-white mb-0">admclubeprimavera@gmail.com</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="fa fa-phone-alt text-primary me-3"></i>
+                            <p class="text-white mb-0">(41) 3657-2920</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-2">
+                    <div class="footer-item">
+                        <h4 class="text-white mb-4">Links Rápidos</h4>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i>Sobre Nós</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Recursos</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i>Atrações</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Ingressos</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Blog</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Contate-nos </a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-2">
+                    <div class="footer-item">
+                        <h4 class="text-white mb-4">Suporte</h4>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Política de Privacidade </a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Termos e Condições</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Isenção de Responsabilidade </a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Suporte</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> FAQ</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Ajuda</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-4">
+                    <div class="footer-item">
+                        <h4 class="text-white mb-4">Horário de Funcionamento </h4>
+                        <div class="opening-date mb-3 pb-3">
+                            <div class="opening-clock flex-shrink-0">
+                                <h6 class="text-white mb-0 me-auto">Sábado - Domingo:</h6>
+                                <p class="mb-0"><i class="fas fa-clock text-primary me-2"></i>09:00 - 17:00</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-white mb-2">Formas de Pagamento Aceitas</p>
+                            <img src="img/payment.png" class="img-fluid" alt="Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Copyright Start -->
+<!--     <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-md-0">
+                    <span class="text-body"><a href="#" class="border-bottom text-white"><i
+                                class="fas fa-copyright text-light me-2"></i>Your Site Name</a>, All right
+                        reserved.</span>
+                </div>
+                <div class="col-md-6 text-center text-md-end text-body">
+                    Designed By <a class="border-bottom text-white" href="https://htmlcodex.com">HTML Codex</a>
+                    Distributed By <a class="border-bottom text-white" href="https://themewagon.com">ThemeWagon</a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Copyright End -->
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
